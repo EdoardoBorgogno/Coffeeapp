@@ -1,0 +1,145 @@
+{
+    "jsonData" : {
+        "jsonName" : "coffee_story.json"
+    },
+    "userProgress" : {
+        "userChapter" : 0
+    },
+    "story" : {
+        "storyName" : "La Storia del caffe",
+        "storyDescription" : "Da vino d’Arabia a bevanda del diavolo, la storia millenaria del caffè.",
+        "storyImage" : "istanbul.jpg"
+    },
+    "chapters" : [
+        {
+            "chapterId" : 0,
+            "chapterName" : "Introduzione",
+            "chapterDesc" : "Introduzione alla storia del caffe",
+            "chapterImage" : "kaffa_people.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "La Storia del caffe",
+                            "content" : "La storia che racconteremo ha inizio più di 1500 anni fa, nel lontano 500 dC, a Kaffa, in Etiopia.",
+                            "image" : "coffee_world.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 1,
+            "chapterName" : "Kaffa",
+            "chapterDesc" : "La culla del caffe",
+            "chapterImage" : "kaffa_plantations.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Kaffa",
+                            "subtitle" : "La culla del caffe",
+                            "content" : "A scoprire l’effetto energizzante del caffè furono con molta probabilità Gli antenati etiopi del gruppo etnico degli Oromo che, già dalla seconda metà del 500 dc, iniziarono ad utilizzare queste strane bacche per produrre un infuso che oggi chiamiamo caffè.",
+                            "image" : "kaffa.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 2,
+            "chapterName" : "Il Viaggio",
+            "chapterDesc" : "Da Kaffa per il mondo",
+            "chapterImage" : "kaffa_yemen.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Il Viaggio",
+                            "subtitle" : "Da kaffa per il mondo",
+                            "image" : "kaffa_yemen.jpg",
+                            "content" : "Tra il XIII e il XIV secolo il caffè venne portato dai guerrieri etiopi nelle loro varie campagne militari. Fu così che la pianta arrivò in Yemen, da qui il passo fu breve e in meno di un secolo arrivò a La Mecca e a Medina."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 3,
+            "chapterName" : "Nell’arabia medievale",
+            "chapterDesc" : "Il caffè in arabia",
+            "chapterImage" : "istanbul.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Nell’arabia medievale",
+                            "subtitle" : "Gli arabi e il caffè",
+                            "image" : "coffee_yemen.jpg",
+                            "content" : "Come già detto il caffe era originario dell’Etiopia, ma solo a partire dal XIV secolo, grazie ai commercianti yemeniti, che iniziarono a coltivarlo, la bevanda trovò rapida diffusione."
+                        }
+                    ]
+                },
+                {
+                    "pageId" : 1,
+                    "pageStructure" : [
+                        {
+                            "subtitle" : "La diffusione nel mondo arabo",
+                            "content" : "Nel 1414 il caffè era conosciuta alla Mecca, 80 anni dopo la bevanda raggiunse il nord d’Africa, intorno al Cairo nacquero una miriade di “case del caffè”, rapidamente queste si diffusero in tutto il mondo arabo raggiungendo Aleppo e Istanbul",
+                            "image" : "coffe_house.jpg"
+                        }
+                    ]
+                },
+                {
+                    "pageId" : 2,
+                    "pageStructure" : [
+                        {
+                            "subtitle" : "La proibizione e la diffusione",
+                            "content" : "Nel 1511 il caffè fu proibito alla Mecca a causa del suo effetto stimolante, tali divieti tuttavia vennero ribaltati nel 1524 grazie ad un ordine esplicito del sultano.",
+                            "image" : "mecca_coffe.jpg",
+                            "content" : "Anche al Cairo una simile proibizione venne proclamata, ma nonostante tutto nel IVI secolo la bevanda raggiunse il resto del Medio Oriente, da qui in un solo secolo arrivò nella penisola italiana e nel resto del Mondo."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 4,
+            "chapterName" : "Il Caffè in europa.",
+            "chapterDesc" : "Da vino d'arabia a bevanda del diavolo",
+            "chapterImage" : "kaffa_yemen.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "L'arrivo in Europa",
+                            "content" : "Il caffè arrivò in Europa, a Malta, grazie agli schiavi musulmani turchi, in poco tempo la bevanda iniziò ad essere usata sull’isola e molte caffetteria vennero aperte.",
+                            "image" : "turkey.jpg",
+                            "content" : "Il commercio marittimo che si avviò tra la repubblica di Venezia e l’impero Ottamano permise l’introduzione di una grande quantità di beni, tra cui il caffè, che così giunse a Venezia dove nacquero le prime “case del caffè” sul Continente."
+                        }
+                    ]
+                },
+                {
+                    "pageId" : 1,
+                    "pageStructure" : [
+                        {
+                            "title" : "Il caffè in Italia",
+                            "subtitle" : "Napoli",
+                            "content" : "Il Caffè a Napoli arrivò solamente in seguito, le navi che arrivavano in Sicilia portarono questa nuova bevanda che subito si diffuse. A Napoli il caffè era visto come una vera e propria bevanda sociale e in poco tempo, anche qui, vennero aperte decine di caffetterie.",
+                            "image" : "napoli.jpg",
+                            "spacer" : 10,
+                            "subtitle" : "Trieste",
+                            "image" : "trieste.jpg",
+                            "content" : "Anche a Trieste il caffè divenne popolare, a partire dal XVII secolo il porto divenne uno dei principali d’Europa, grandi quantità di caffè iniziarono ad arrivare in città e con il progresso tecnologico, successivo alla ferrovia, Trieste divenne il principale luogo d’importazione di caffè."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
