@@ -40,6 +40,12 @@ class Repository {
     return await file.readAsString();
   }
 
+  Future<Map<String, dynamic>> readFileAndReturnMap() async {
+    final file = await _initializeFile();
+
+    return await jsonDecode(await file.readAsString());
+  }
+
   Future<void> writeToFile(String data) async {
     final file = await _initializeFile();
     await file.writeAsString(data);

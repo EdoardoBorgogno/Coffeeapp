@@ -23,7 +23,7 @@
                         {
                             "title" : "La Storia del caffe",
                             "content" : "La storia che racconteremo ha inizio più di 1500 anni fa, nel lontano 500 dC, a Kaffa, in Etiopia.",
-                            "image" : "coffee_world.png"
+                            "image" : "kaffa_people.jpg"
                         }
                     ]
                 }
@@ -111,7 +111,7 @@
             "chapterId" : 4,
             "chapterName" : "Il Caffè in europa.",
             "chapterDesc" : "Da vino d'arabia a bevanda del diavolo",
-            "chapterImage" : "kaffa_yemen.jpg",
+            "chapterImage" : "coffehouse.jpg",
             "chapterPages" : [
                 {
                     "pageId" : 0,
@@ -135,7 +135,18 @@
                             "spacer" : 10,
                             "subtitle" : "Trieste",
                             "image" : "trieste.jpg",
-                            "content" : "Anche a Trieste il caffè divenne popolare, a partire dal XVII secolo il porto divenne uno dei principali d’Europa, grandi quantità di caffè iniziarono ad arrivare in città e con il progresso tecnologico, successivo alla ferrovia, Trieste divenne il principale luogo d’importazione di caffè."
+                            "content" : "Anche a Trieste il caffè divenne popolare, a partire dal XVII secolo il porto divenne uno dei principali d’Europa, grandi quantità di caffè iniziarono ad arrivare in città e con il progresso tecnologico, successivo alla ferrovia, Trieste divenne uno dei principali luoghi d’importazione di caffè nel vecchio continente."
+                        }
+                    ]
+                },
+                {
+                    "pageId" : 2,
+                    "pageStructure" : [
+                        {
+                            "title" : "Una nuova moda",
+                            "content" : "In Europa il caffè arrivò con sicurezza attorno al 1600, da questo momento la sua diffusione fu rapida e ampia. Il primo caffè inglese venne inaugurato ad Oxford nel 1651, vent’anni più tardi si potevano già contare, nella sola Inghilterra, più di 3000 caffetterie.",
+                            "image" : "london.jpg",
+                            "content" : "Anche negli altri stati europei la nuova bevanda ebbe un grande successo, a partire dal 1658 gli olandesi iniziarono a coltivare, nelle loro colonie, il caffè. In questo modo il prezzo si abbassò notevolmente e la bevanda divenne più accessibile."
                         }
                     ]
                 }

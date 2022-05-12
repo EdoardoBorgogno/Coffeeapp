@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import 'package:coffeapp/screens/story_page.dart';
 import 'package:coffeapp/services/json.dart';
+import 'package:coffeapp/services/navigation_animations.dart';
 import 'package:flutter/material.dart';
 
 class StartStory extends StatelessWidget {
@@ -79,12 +81,112 @@ class TopPartStartStory extends StatelessWidget {
                         ),
                         child: Column(
                           children: <Widget>[
+                            SizedBox(
+                              height: MediaQuery.of(context).size.height * 0.05,
+                            ),
                             Text(
                               json['story']['storyName'],
                               style: TextStyle(
                                 fontFamily: 'comic',
+                                fontSize:
+                                    MediaQuery.of(context).size.height * 0.03,
                               ),
-                            )
+                            ),
+                            SizedBox(
+                              height: MediaQuery.of(context).size.height * 0.05,
+                            ),
+                            SingleChildScrollView(
+                              child: SizedBox(
+                                width: MediaQuery.of(context).size.width * 0.9,
+                                child: Text(
+                                  json['story']['storyDescription'],
+                                  style: TextStyle(
+                                    fontFamily: 'comic',
+                                    fontSize:
+                                        MediaQuery.of(context).size.height *
+                                            0.02,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  SizedBox(
+                                    height: MediaQuery.of(context).size.height *
+                                        0.1,
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        TextButton(
+                                          style: ButtonStyle(
+                                            padding: MaterialStateProperty.all<
+                                                EdgeInsets>(
+                                              EdgeInsets.all(10),
+                                            ),
+                                          ),
+                                          onPressed: () {
+                                            Navigator.pop(context);
+                                          },
+                                          child: Text(
+                                            'Annulla',
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                  255, 92, 92, 92),
+                                              fontFamily: 'comic',
+                                              fontSize: MediaQuery.of(context)
+                                                      .size
+                                                      .height *
+                                                  0.03,
+                                            ),
+                                          ),
+                                        ),
+                                        ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                              Theme.of(context).primaryColor,
+                                            ),
+                                            padding: MaterialStateProperty.all<
+                                                EdgeInsets>(
+                                              EdgeInsets.all(10),
+                                            ),
+                                          ),
+                                          onPressed: () {
+                                            Navigator.pushAndRemoveUntil(
+                                              context,
+                                              createRoute(
+                                                StoryPage(
+                                                  jsonName: jsonName,
+                                                  chapterId: 0,
+                                                ),
+                                              ),
+                                              (route) => false,
+                                            );
+                                          },
+                                          child: Text(
+                                            'Inizia Storia',
+                                            style: TextStyle(
+                                              fontFamily: 'comic',
+                                              fontSize: MediaQuery.of(context)
+                                                      .size
+                                                      .height *
+                                                  0.03,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: MediaQuery.of(context).size.height *
+                                        0.05,
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:coffeapp/screens/start_story.dart';
+import 'package:coffeapp/screens/story_page.dart';
 import 'package:flutter/material.dart';
 
 import '../services/navigation_animations.dart';
@@ -35,13 +36,23 @@ class CardElement extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (isClickable && !isCompleted) {
+          print('PASSED');
           if (id == 0) {
             Navigator.of(context).push(
-              createRoute(
+              createRouteFromBottom(
                 StartStory(jsonName),
               ),
             );
-          } else {}
+          } else {
+            Navigator.of(context).push(
+              createRouteFromBottom(
+                StoryPage(
+                  chapterId: id,
+                  jsonName: jsonName,
+                ),
+              ),
+            );
+          }
         }
       },
       child: Container(

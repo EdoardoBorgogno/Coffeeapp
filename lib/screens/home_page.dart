@@ -152,16 +152,18 @@ class MidPartHome extends StatelessWidget {
           topRight: Radius.circular(25.0),
         ),
       ),
-      child: Column(
-        children: <Widget>[
-          RowWithCardHomePage(),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.025,
-          ),
-          Random().nextInt(2) == 0
-              ? QuizContainerHome()
-              : AccountContainerHome(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            RowWithCardHomePage(),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.025,
+            ),
+            Random().nextInt(2) == 0
+                ? QuizContainerHome()
+                : AccountContainerHome(),
+          ],
+        ),
       ),
     );
   }

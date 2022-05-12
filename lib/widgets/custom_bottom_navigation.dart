@@ -5,6 +5,7 @@ import 'package:coffeapp/screens/loading_screen.dart';
 import 'package:coffeapp/screens/stories_coffee.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:page_transition/page_transition.dart';
 
 import '../services/navigation_animations.dart';
 
@@ -31,15 +32,47 @@ class _CustomBottomNavigationState extends State<CustomBottomNavigation> {
   }
 
   void onTabTapped(int index) {
+    int indexForTransition = _currentIndex;
     if (_currentIndex != index) {
       setState(() {
         _currentIndex = index;
       });
 
-      Navigator.of(context).pushAndRemoveUntil(
-        createRoute(_screens[_currentIndex]),
-        ((route) => false),
-      );
+      if (_currentIndex == 2) {
+        Navigator.of(context).pushAndRemoveUntil(
+          PageTransition(
+            child: _screens[_currentIndex],
+            type: PageTransitionType.leftToRight,
+          ),
+          ((route) => false),
+        );
+      } else if (_currentIndex == 0) {
+        Navigator.of(context).pushAndRemoveUntil(
+          PageTransition(
+            child: _screens[_currentIndex],
+            type: PageTransitionType.rightToLeft,
+          ),
+          ((route) => false),
+        );
+      } else {
+        if (indexForTransition == 0) {
+          Navigator.of(context).pushAndRemoveUntil(
+            PageTransition(
+              child: _screens[_currentIndex],
+              type: PageTransitionType.leftToRight,
+            ),
+            ((route) => false),
+          );
+        } else {
+          Navigator.of(context).pushAndRemoveUntil(
+            PageTransition(
+              child: _screens[_currentIndex],
+              type: PageTransitionType.rightToLeft,
+            ),
+            ((route) => false),
+          );
+        }
+      }
     }
   }
 
