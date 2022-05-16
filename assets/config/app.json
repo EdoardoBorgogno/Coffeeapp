@@ -7,6 +7,10 @@
     },
     "userData" : {
         "username" : "",
-        "iconUser" : ""
-    }
+        "iconUser" : "americano.png",
+        "totalScore" : 0
+    },
+    "userCompletedStories" : [
+       
+    ]
 }

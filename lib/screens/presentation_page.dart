@@ -68,20 +68,32 @@ class _PresentationPageContent extends State<PresentationPageContent> {
             jsonEncode(json),
           )
               .then(
-            (value) async {
+            (value) {
               Repository storiesConfig = Repository(
                 initialAssetFile: "assets/stories/coffee_story.json",
                 localFilename: "coffee_story.json",
               );
 
-              storiesConfig.readFile();
-
-              Navigator.of(context).pushAndRemoveUntil(
-                createRoute(
-                  HomePage(),
-                ),
-                ((route) => false),
+              Repository coffelandConfig = Repository(
+                initialAssetFile: "assets/stories/coffeland_story.json",
+                localFilename: "coffeland_story.json",
               );
+
+              Repository starbucksConfig = Repository(
+                initialAssetFile: "assets/stories/starbucks_story.json",
+                localFilename: "starbucks_story.json",
+              );
+
+              coffelandConfig.readFile();
+              starbucksConfig.readFile();
+              storiesConfig.readFile().then(
+                    (value) => Navigator.of(context).pushAndRemoveUntil(
+                      createRoute(
+                        HomePage(),
+                      ),
+                      ((route) => false),
+                    ),
+                  );
             },
           );
         },
@@ -149,7 +161,7 @@ class ThirdPage extends StatelessWidget {
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.7,
           child: Text(
-            "Coffeland",
+            "Coffeeland",
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Color.fromARGB(255, 74, 53, 42),
@@ -215,7 +227,7 @@ class SecondPage extends StatelessWidget {
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.7,
           child: Text(
-            "Quante sai sul caffè? Prova i quiz per scoprirlo!\n Gioca i quiz, guadagna monete e usale per scoprire storie uniche sulla bevanda più consumata al mondo.",
+            "Quante ne sai sul caffè? Prova i quiz per scoprirlo!\n Gioca i quiz, guadagna tazzine e usale per scoprire storie uniche sulla bevanda più consumata al mondo.",
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Color.fromARGB(255, 74, 53, 42),

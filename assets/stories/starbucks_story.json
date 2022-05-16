@@ -1,0 +1,91 @@
+{
+    "jsonData" : {
+        "jsonName" : "starbucks_story.json"
+    },
+    "userProgress" : {
+        "userChapter" : 0
+    },
+    "story" : {
+        "storyName" : "La storia di Starbucks",
+        "storyDescription" : "Nel suo libro Sedgewick racconta la storia di un impero fondato  sul caffè e governato dalla famiglia Hill. Oggi anche noi racconteremo una storia, una storia che inizia nel 1971 a Seattle, ed ha lo stesso protagonista del libro di Sedgewick.",
+        "storyImage" : "starbucks2.jpg"
+    },
+    "chapters" : [
+        {
+            "chapterId" : 0,
+            "chapterName" : "Introduzione",
+            "chapterDesc" : "Introduzione a Starbucks",
+            "chapterImage" : "cup_star.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "La Storia di Starbucks",
+                            "content" : "Starbucks nasce a Seattle nel 1971, viene fondata da tre partner affascinati dalla tostatura dei chicchi di caffè.",
+                            "image" : "cup_star.jpg",
+                            "content1" : "Inizialmente l’azienda si occupa solamente della vendita di tali chicchi, ma in seguito diventa una vera e propria caffetteria."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 1,
+            "chapterName" : "Il Progetto",
+            "chapterDesc" : "Il progetto Starbucks",
+            "chapterImage" : "images.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Coffeeland",
+                            "content" : "Nel 1987 la catena viene venduta e, per la prima volta, l’azienda si affaccia sul mercato statunitense. Fu subito un grande successo, sotto la guida del nuovo manager, Howard Schultz, in quattro anni la catena di caffetterie era cresciuta da meno di 20 negozi a più di 100.",
+                            "image" : "images.jpg",
+                            "content1" : "Solamente 10 anni più tardi, nel 1996, Starbucks aveva aperto più di 2500 locali in Nord America."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 2,
+            "chapterName" : "Sostenibilità",
+            "chapterDesc" : "Un uomo di Manchester",
+            "chapterImage" : "plant.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Sostenibilità",
+                            "image" : "plant.jpg",
+                            "content" : "Il progetto di Starbucks coinvolge anche le comunità agricole con cui lavora attraverso una serie di programmi pensati per rafforzare lo sviluppo economico e sociale.",
+                            "image1" : "star_bean.jpg",
+                            "content1" : "L’azienda nel 2019, quando i prezzi del caffè hanno raggiunto il loro minimo storico, ha erogato aiuti ai suoi agricoltori in Guatemala , Nicaragua , El Salvador e Messico. Starbucks è spesso citato come un leader del settore nel pagare tariffe superiori a quelle di mercato per i suoi chicchi di caffè e afferma che oltre il 90% dei suoi chicchi proviene da fonti etiche."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 3,
+            "chapterName" : "Scandali",
+            "chapterDesc" : "Starbucks e gli scandali",
+            "chapterImage" : "sad_plant.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Scandali",
+                            "content" : "Nonostante il suo apparente impegno ad acquistare caffè di provenienza etica, Starbucks ha dovuto affrontare accuse di acquisto da fattorie e piantagioni che utilizzano il lavoro minorile e lo sfruttamento dei lavoratori.",
+                            "image" : "sad_cup.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

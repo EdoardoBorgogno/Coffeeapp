@@ -1,0 +1,109 @@
+{
+    "jsonData" : {
+        "jsonName" : "coffeland_story.json"
+    },
+    "userProgress" : {
+        "userChapter" : 0
+    },
+    "story" : {
+        "storyName" : "La storia di Coffeeland",
+        "storyDescription" : "Augustine Sedgewick racconta una storia che pochi bevitori di caffè conoscono. Il cuore della vicenda si svolge sugli altopiani vulcanici di El Salvador, dove James Hill, originario dei bassifondi di Manchester, in Inghilterra, fondò una delle piú grandi dinastie del caffè del mondo all’inizio del xx secolo.",
+        "storyImage" : "coffeland.jpg"
+    },
+    "chapters" : [
+        {
+            "chapterId" : 0,
+            "chapterName" : "Introduzione",
+            "chapterDesc" : "Introduzione a Coffeeland",
+            "chapterImage" : "coffeland.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "La Storia di Coffeeland",
+                            "content" : "Il caffè è una parte indispensabile della vita quotidiana per miliardi di persone in tutto il mondo, una delle merci più preziose nella storia del capitalismo globale. Coffeeland di Augustine Sedgewick racconta la storia nascosta e sorprendente di questa bevanda.",
+                            "image" : "coffe_sed.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 1,
+            "chapterName" : "Coffeeland",
+            "chapterDesc" : "una storia sorprendente e drammatica",
+            "chapterImage" : "book.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Coffeeland",
+                            "content" : "Il libro di Sedgewick racconta come una merce di tutti i giorni ha solcato la superficie del mondo ed ha cambiato la vita di milioni di persone. Coffeeland mostra i dettagli convincenti di come il capitalismo del caffè abbia portato profitto e dolore, conforto e terrore a persone diverse in momenti diversi negli ultimi 200 anni.",
+                            "image" : "book.jpg",
+                            "content1" : "A volte l’impatto capitalistico è lento, altre volte rapido e leggibile: un'impennata della domanda di caffè dagli Stati Uniti richiede che i lavoratori nell'emisfero meridionale rinuncino al sonno."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 2,
+            "chapterName" : "Hill",
+            "chapterDesc" : "Un uomo di Manchester",
+            "chapterImage" : "city.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "James Hill",
+                            "subtitle" : "Un uomo di Manchester",
+                            "image" : "city.jpg",
+                            "content" : "Al centro del racconto di Sedgewick c'è la storia di James Hill, un giovane venditore di tessuti di Manchester che nel 1889 partì per l'America centrale e divenne l'indiscusso re del caffè di El Salvador. Nel 1951, quando Hill morì, governava un impero di 1000 ettari, impiegando più di 5000 persone."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 3,
+            "chapterName" : "Fame e successo",
+            "chapterDesc" : "Il trucco di Manchester",
+            "chapterImage" : "volcano.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Il trucco di Manchester",
+                            "content" : "Dietro il grande successo di James Hill vi era la mentalità industriale della sua città natale. Hill utilizzò prestiti bancari per acquistare i primi appezzamenti di terreno, in poco tempo il suo investimento si rivelò profittevole, riuscì ad espropriare le terre ai piccoli proprietari indigeni che, senza scelta, iniziarono a lavorare per l’inglese.",
+                            "image" : "volcano.jpg",
+                            "content1" : "Hill aveva ripreso il trucco degli uomini di Manchester: i lavoratori, ormai costretti alla fame, erano pagati con  tortilla e fagioli, in questo modo era impossibile sfuggire a questa forma di schiavizzazione."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 4,
+            "chapterName" : "Una piccola tazzina",
+            "chapterDesc" : "con una grande storia",
+            "chapterImage" : "book2.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Una piccola tazzina",
+                            "subtitle" :"con una grande storia",
+                            "content" : "Seguendo diverse generazioni della famiglia Hill, Sedgewick mostra come persone diverse, in momenti diversi, sono collegate tra loro attraverso le cose di tutti i giorni, una semplice tazzina di caffè racconta una storia che pochi bevitori conoscono.",
+                            "image" : "book2.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

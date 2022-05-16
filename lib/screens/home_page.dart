@@ -6,6 +6,7 @@ import 'dart:math';
 import 'package:coffeapp/screens/account.dart';
 import 'package:coffeapp/services/json.dart';
 import 'package:coffeapp/widgets/account_card.dart';
+import 'package:coffeapp/widgets/coffe_cup_card.dart';
 import 'package:coffeapp/widgets/quiz.dart';
 import 'package:coffeapp/widgets/row_element_home.dart';
 import 'package:flutter/material.dart';
@@ -81,55 +82,72 @@ class TopPartIntro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Repository rep = Repository(
-        initialAssetFile: 'assets/config/app.json', localFilename: 'app.json');
+      initialAssetFile: 'assets/config/app.json',
+      localFilename: 'app.json',
+    );
 
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.9,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
-            alignment: Alignment.centerLeft,
             child: FutureBuilder<dynamic>(
               future: rep.readFile(),
               initialData: null,
               builder: (context, snapshot) {
                 var json = jsonDecode(snapshot.data);
+                String icon = json['userData']['iconUser'];
                 String nome = json['userData']['username'];
                 return snapshot.data == null
                     ? CircularProgressIndicator()
-                    : Text(
-                        "Ciao " + nome.toString() + "!",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontFamily: 'Mistral',
-                          fontSize: MediaQuery.of(context).size.height * 0.04,
+                    : Padding(
+                        padding: EdgeInsets.only(
+                          left: MediaQuery.of(context).size.width * 0.05,
+                        ),
+                        child: SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Ciao " + nome.toString() + "!",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  fontFamily: 'Mistral',
+                                  fontSize:
+                                      MediaQuery.of(context).size.height * 0.04,
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () =>
+                                    Navigator.of(context).pushAndRemoveUntil(
+                                  createRoute(
+                                    CoffeAccount(),
+                                  ),
+                                  ((route) => false),
+                                ),
+                                child: Container(
+                                  height: 54,
+                                  width: 54,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                        width: 1.0, color: Colors.white),
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Image(
+                                    image: AssetImage(
+                                        'assets/icons/avatars/' + icon),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       );
               },
-            ),
-          ),
-          GestureDetector(
-            onTap: () => Navigator.of(context).pushAndRemoveUntil(
-              createRoute(
-                CoffeAccount(),
-              ),
-              ((route) => false),
-            ),
-            child: Container(
-              height: 54,
-              width: 54,
-              decoration: BoxDecoration(
-                border: Border.all(width: 1.0, color: Colors.white),
-                color: Colors.white,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                Icons.person,
-                size: 42,
-                color: Theme.of(context).primaryColor,
-              ),
             ),
           ),
         ],
@@ -143,6 +161,8 @@ class MidPartHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int randomCardHome = Random().nextInt(3);
+
     return Container(
       width: MediaQuery.of(context).size.width * 1,
       decoration: const BoxDecoration(
@@ -155,13 +175,19 @@ class MidPartHome extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            RowWithCardHomePage(),
+            RowWithCard(
+              initialAssetPath: "assets/config/coffee_story.json",
+              localPath: "coffee_story.json",
+            ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.025,
             ),
-            Random().nextInt(2) == 0
-                ? QuizContainerHome()
-                : AccountContainerHome(),
+            if (randomCardHome == 0)
+              QuizContainerHome()
+            else if (randomCardHome == 1)
+              AccountContainerHome()
+            else if (randomCardHome == 2)
+              CoffeCupHome(),
           ],
         ),
       ),

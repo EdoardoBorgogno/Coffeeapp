@@ -7,7 +7,7 @@
     },
     "story" : {
         "storyName" : "La Storia del caffe",
-        "storyDescription" : "Da vino d’Arabia a bevanda del diavolo, la storia millenaria del caffè.",
+        "storyDescription" : "Da vino d’Arabia a bevanda del diavolo, la storia millenaria del caffè. Scopri come il caffè è diventato una delle bevande più consumate al Mondo",
         "storyImage" : "istanbul.jpg"
     },
     "chapters" : [
@@ -22,7 +22,7 @@
                     "pageStructure" : [
                         {
                             "title" : "La Storia del caffe",
-                            "content" : "La storia che racconteremo ha inizio più di 1500 anni fa, nel lontano 500 dC, a Kaffa, in Etiopia.",
+                            "content" : "La storia che racconteremo ha inizio più di 1500 anni fa, nel lontano 500 d.C., a Kaffa, in Etiopia.",
                             "image" : "kaffa_people.jpg"
                         }
                     ]
@@ -41,7 +41,7 @@
                         {
                             "title" : "Kaffa",
                             "subtitle" : "La culla del caffe",
-                            "content" : "A scoprire l’effetto energizzante del caffè furono con molta probabilità Gli antenati etiopi del gruppo etnico degli Oromo che, già dalla seconda metà del 500 dc, iniziarono ad utilizzare queste strane bacche per produrre un infuso che oggi chiamiamo caffè.",
+                            "content" : "A scoprire l’effetto energizzante del caffè furono, con molta probabilità, gli antenati etiopi del gruppo etnico degli Oromo che, già dalla seconda metà del 500 d.C., iniziarono ad utilizzare queste strane bacche per produrre un infuso che oggi chiamiamo caffè.",
                             "image" : "kaffa.jpg"
                         }
                     ]
@@ -69,18 +69,18 @@
         },
         {
             "chapterId" : 3,
-            "chapterName" : "Nell’arabia medievale",
-            "chapterDesc" : "Il caffè in arabia",
+            "chapterName" : "Nell’Arabia medievale",
+            "chapterDesc" : "Il caffè in Arabia",
             "chapterImage" : "istanbul.jpg",
             "chapterPages" : [
                 {
                     "pageId" : 0,
                     "pageStructure" : [
                         {
-                            "title" : "Nell’arabia medievale",
+                            "title" : "Nell’Arabia medievale",
                             "subtitle" : "Gli arabi e il caffè",
                             "image" : "coffee_yemen.jpg",
-                            "content" : "Come già detto il caffe era originario dell’Etiopia, ma solo a partire dal XIV secolo, grazie ai commercianti yemeniti, che iniziarono a coltivarlo, la bevanda trovò rapida diffusione."
+                            "content" : "Come già detto il caffè era originario dell’Etiopia, ma solo a partire dal XIV secolo, grazie ai commercianti yemeniti, che iniziarono a coltivarlo, la bevanda trovò rapida diffusione."
                         }
                     ]
                 },
@@ -89,7 +89,7 @@
                     "pageStructure" : [
                         {
                             "subtitle" : "La diffusione nel mondo arabo",
-                            "content" : "Nel 1414 il caffè era conosciuta alla Mecca, 80 anni dopo la bevanda raggiunse il nord d’Africa, intorno al Cairo nacquero una miriade di “case del caffè”, rapidamente queste si diffusero in tutto il mondo arabo raggiungendo Aleppo e Istanbul",
+                            "content" : "Nel 1414 il caffè era conosciuto alla Mecca, 80 anni dopo la bevanda raggiunse il nord d’Africa, intorno al Cairo nacquero una miriade di “case del caffè”, rapidamente queste si diffusero in tutto il mondo arabo raggiungendo Aleppo e Istanbul.",
                             "image" : "coffe_house.jpg"
                         }
                     ]
@@ -101,7 +101,7 @@
                             "subtitle" : "La proibizione e la diffusione",
                             "content" : "Nel 1511 il caffè fu proibito alla Mecca a causa del suo effetto stimolante, tali divieti tuttavia vennero ribaltati nel 1524 grazie ad un ordine esplicito del sultano.",
                             "image" : "mecca_coffe.jpg",
-                            "content" : "Anche al Cairo una simile proibizione venne proclamata, ma nonostante tutto nel IVI secolo la bevanda raggiunse il resto del Medio Oriente, da qui in un solo secolo arrivò nella penisola italiana e nel resto del Mondo."
+                            "content1" : "Anche al Cairo una simile proibizione venne proclamata, ma nonostante tutto nel IVI secolo la bevanda raggiunse il resto del Medio Oriente, da qui in un solo secolo arrivò nella penisola italiana e nel resto del Mondo."
                         }
                     ]
                 }
@@ -109,8 +109,8 @@
         },
         {
             "chapterId" : 4,
-            "chapterName" : "Il Caffè in europa.",
-            "chapterDesc" : "Da vino d'arabia a bevanda del diavolo",
+            "chapterName" : "Il Caffè in Europa.",
+            "chapterDesc" : "Da vino d'Arabia a bevanda del diavolo",
             "chapterImage" : "coffehouse.jpg",
             "chapterPages" : [
                 {
@@ -120,7 +120,7 @@
                             "title" : "L'arrivo in Europa",
                             "content" : "Il caffè arrivò in Europa, a Malta, grazie agli schiavi musulmani turchi, in poco tempo la bevanda iniziò ad essere usata sull’isola e molte caffetteria vennero aperte.",
                             "image" : "turkey.jpg",
-                            "content" : "Il commercio marittimo che si avviò tra la repubblica di Venezia e l’impero Ottamano permise l’introduzione di una grande quantità di beni, tra cui il caffè, che così giunse a Venezia dove nacquero le prime “case del caffè” sul Continente."
+                            "content1" : "Il commercio marittimo che si avviò tra la repubblica di Venezia e l’impero Ottamano permise l’introduzione di una grande quantità di beni, tra cui il caffè, che così giunse a Venezia dove nacquero le prime “case del caffè” sul Continente."
                         }
                     ]
                 },
@@ -133,9 +133,9 @@
                             "content" : "Il Caffè a Napoli arrivò solamente in seguito, le navi che arrivavano in Sicilia portarono questa nuova bevanda che subito si diffuse. A Napoli il caffè era visto come una vera e propria bevanda sociale e in poco tempo, anche qui, vennero aperte decine di caffetterie.",
                             "image" : "napoli.jpg",
                             "spacer" : 10,
-                            "subtitle" : "Trieste",
-                            "image" : "trieste.jpg",
-                            "content" : "Anche a Trieste il caffè divenne popolare, a partire dal XVII secolo il porto divenne uno dei principali d’Europa, grandi quantità di caffè iniziarono ad arrivare in città e con il progresso tecnologico, successivo alla ferrovia, Trieste divenne uno dei principali luoghi d’importazione di caffè nel vecchio continente."
+                            "subtitle1" : "Trieste",
+                            "image1" : "trieste.jpg",
+                            "content1" : "Anche a Trieste il caffè divenne popolare, a partire dal XVII secolo il porto divenne uno dei principali d’Europa, grandi quantità di caffè iniziarono ad arrivare in città e con il progresso tecnologico, successivo alla ferrovia, Trieste divenne uno dei principali luoghi d’importazione di caffè nel vecchio continente."
                         }
                     ]
                 },
@@ -146,7 +146,45 @@
                             "title" : "Una nuova moda",
                             "content" : "In Europa il caffè arrivò con sicurezza attorno al 1600, da questo momento la sua diffusione fu rapida e ampia. Il primo caffè inglese venne inaugurato ad Oxford nel 1651, vent’anni più tardi si potevano già contare, nella sola Inghilterra, più di 3000 caffetterie.",
                             "image" : "london.jpg",
-                            "content" : "Anche negli altri stati europei la nuova bevanda ebbe un grande successo, a partire dal 1658 gli olandesi iniziarono a coltivare, nelle loro colonie, il caffè. In questo modo il prezzo si abbassò notevolmente e la bevanda divenne più accessibile."
+                            "content1" : "Anche negli altri stati europei la nuova bevanda ebbe un grande successo, a partire dal 1658 gli olandesi iniziarono a coltivare, nelle loro colonie, il caffè. In questo modo il prezzo si abbassò notevolmente e la bevanda divenne più accessibile."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 5,
+            "chapterName" : "Nel XVIII secolo.",
+            "chapterDesc" : "Il monopolio olandese",
+            "chapterImage" : "holland.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "Monopolio olandese",
+                            "content" : "Un brusco aumento della domanda di caffè provocò una mancanza del prodotto nella prima parte del XVIII secolo, ma già dal 1730 gli olandesi riuscirono ad ottenere il monopolio, nel 1790 l’80% della produzione mondiale giungeva dalla Guyana olandese, dalla Colonia del Brasile e da Saint Domingue. ",
+                            "image" : "holland.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapterId" : 6,
+            "chapterName" : "All’alba del XX secolo.",
+            "chapterDesc" : "Un nuovo mondo",
+            "chapterImage" : "brphoto.jpg",
+            "chapterPages" : [
+                {
+                    "pageId" : 0,
+                    "pageStructure" : [
+                        {
+                            "title" : "All’alba del XX secolo",
+                            "content" : "All'alba del XX secolo il commercio mondiale del caffè costituiva il terzo più grande per valore, dietro ai cereali e allo zucchero. Il principale produttore era il Brasile che controllava l’80% della produzione.",
+                            "image" : "brasil.jpg",
+                            "subtitle" : "Dopo il 29",
+                            "content1" : "Dopo la crisi del 1929 emersero nuovi grandi protagonisti, piccoli stati come El Salvador o la Nuova Caledonia (controllata dai francesi), si concentrarono su una monocoltura di caffè. Vi fu anche un grande ritorno del caffè africano che ormai da tempo aveva perso la sua importanza."
                         }
                     ]
                 }

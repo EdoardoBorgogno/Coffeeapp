@@ -36,7 +36,6 @@ class CardElement extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (isClickable && !isCompleted) {
-          print('PASSED');
           if (id == 0) {
             Navigator.of(context).push(
               createRouteFromBottom(

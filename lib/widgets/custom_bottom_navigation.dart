@@ -89,7 +89,7 @@ class _CustomBottomNavigationState extends State<CustomBottomNavigation> {
       items: const [
         BottomNavigationBarItem(
           icon: ImageIcon(
-            AssetImage("assets/icons/coffe.png"),
+            AssetImage("assets/icons/book.png"),
           ),
           label: '',
         ),
