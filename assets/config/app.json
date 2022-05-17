@@ -12,5 +12,15 @@
     },
     "userCompletedStories" : [
        
+    ],
+    "userCompletedQuiz" : [
+        {
+            "quizName" : "",
+            "quizScore" : {
+                "totalPoints" : 20,
+                "rightPoints" : 15,
+                "wrongPoints" : 5
+            }
+        }
     ]
 }

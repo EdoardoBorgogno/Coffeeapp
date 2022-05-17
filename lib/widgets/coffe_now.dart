@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../screens/stories_coffee.dart';
+import '../services/navigation_animations.dart';
+
 class CoffeeNowWidget extends StatelessWidget {
   const CoffeeNowWidget({Key? key}) : super(key: key);
 
@@ -7,7 +10,8 @@ class CoffeeNowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        print('CoffeeNowWidget');
+        Navigator.pushAndRemoveUntil(
+            context, createRoute(CoffeeStories()), (route) => false);
       },
       child: Container(
         width: MediaQuery.of(context).size.width * 0.85,
@@ -50,7 +54,7 @@ class CoffeeNowWidget extends StatelessWidget {
                   const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      'Cos\'e\' oggi il caffe?',
+                      'Cos\'e\' oggi il caffe\'?',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Freehand',

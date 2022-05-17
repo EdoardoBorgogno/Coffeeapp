@@ -1,0 +1,89 @@
+{
+    "jsonData" : {
+        "jsonName" : "coffe_story_quiz.json"
+    },
+    "quiz" : {
+        "quizName" : "La Storia del caffè",
+        "quizDescription" : "Quiz sulla storia del caffè, rispondi a domande sulla bevanda più consumata al mondo.",
+        "quizImage" : "holland.jpg"
+    },
+    "pageStructure" : [
+        {
+            "questionText" : "Dove nacque il caffè?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Yemen",
+                "Etiopia",
+                "Brasile",
+                "Turchia"
+            ],
+            "rigthAnswer" : "Etiopia"
+        },
+        {
+            "questionText" : "In che anno il caffè arrivò alla Mecca?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "1249",
+                "1125",
+                "1414",
+                "1630"
+            ],
+            "rigthAnswer" : "1414"
+        },
+        {
+            "questionText" : "Inserisci il nome della varietà di caffè proveniente da Kaffa?",
+            "type" : "text",
+            "rigthAnswer" : "coffea arabica"
+        },
+        {
+            "questionText" : "Il caffè in Europa era un prodotto?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Costoso",
+                "Economico",
+                "Sacro"
+            ],
+            "rigthAnswer" : "Costoso"
+        },
+        {
+            "questionText" : "Le caffetterie erano luoghi frequentati da letterati?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Vero",
+                "Falso"
+            ],
+            "rigthAnswer" : "Vero"
+        },
+        {
+            "questionText" : "In quale città italiana è nato l’espresso nel 1884?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Napoli",
+                "Palermo",
+                "Trieste",
+                "Torino"
+            ],
+            "rigthAnswer" : "Torino"
+        },
+        {
+            "questionText" : "A partire dal 1820, quale Paese divenne il primo produttore mondiale di caffè?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Guatemala",
+                "El Salvador",
+                "Cina",
+                "Brasile"
+            ],
+            "rigthAnswer" : "Brasile"
+        },
+        {
+            "questionText" : "Con la crisi del '29 cosa accadde al caffè?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Divenne più costoso",
+                "Divenne meno costoso"
+            ],
+            "rigthAnswer" : "Divenne meno costoso"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "quizs" : [
+        {
+            "jsonName" : "coffe_story_quiz.json",
+            "quizName" : "La Storia del caffè",
+            "quizDescription" : "Quiz sulla storia del caffè, rispondi a domande sulla bevanda più consumata al mondo.",
+            "quizImage" : "holland.jpg"
+        },
+        {
+            "jsonName" : "starbucks_quiz.json",
+            "quizName" : "La Storia di Starbucks",
+            "quizDescription" : "Quiz sulla storia di Starbucks, quante ne sai sull'impero del caffè?",
+            "quizImage" : "starbucks2.jpg"
+        }
+    ]
+}

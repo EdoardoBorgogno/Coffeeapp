@@ -54,7 +54,7 @@ class LoadingScreenContent extends StatelessWidget {
                 ),
               ),
               Text(
-                'La storia del caffe',
+                'La storia del caffe\'',
                 style: TextStyle(
                   fontSize: MediaQuery.of(context).size.width * 0.1,
                   color: Theme.of(context).primaryColor,

@@ -37,7 +37,7 @@ class QuizContainerHome extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.01,
                   ),
                   Text(
-                    'Quanto ne sai sul caffe?',
+                    'Quanto ne sai sul caffe\'?',
                     style: TextStyle(
                       color: const Color.fromARGB(255, 0, 0, 0),
                       fontFamily: 'Mistral',

@@ -1,3 +1,5 @@
+import 'package:coffeapp/screens/stories_coffee.dart';
+import 'package:coffeapp/services/navigation_animations.dart';
 import 'package:flutter/material.dart';
 
 class ElSalvadorWidget extends StatelessWidget {
@@ -7,7 +9,8 @@ class ElSalvadorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        print('El Salvador');
+        Navigator.pushAndRemoveUntil(
+            context, createRoute(CoffeeStories()), (route) => false);
       },
       child: Container(
         width: MediaQuery.of(context).size.width * 0.85,
@@ -50,7 +53,7 @@ class ElSalvadorWidget extends StatelessWidget {
                   const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      'Scopri la storia!',
+                      'Scoprila!',
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Freehand',

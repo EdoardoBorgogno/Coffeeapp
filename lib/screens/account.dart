@@ -417,35 +417,45 @@ class _CoffeAccountContentState extends State<CoffeAccountContent> {
                       ),
                     ),
                   ),
-                  Container(
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/icons/quiz.png',
-                          fit: BoxFit.contain,
-                          color: Theme.of(context).primaryColor,
-                        ),
-                        SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.01,
-                        ),
-                        Text(
-                          'Quiz',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 40, 40, 40),
-                            fontFamily: 'Mistral',
-                            fontSize:
-                                MediaQuery.of(context).size.height * 0.025,
+                  GestureDetector(
+                    onTap: () => Navigator.of(context).pushAndRemoveUntil(
+                      PageTransition(
+                        child: CoffeeStories(),
+                        type: PageTransitionType.leftToRight,
+                      ),
+                      ((route) => false),
+                    ),
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/icons/quiz.png',
+                            fit: BoxFit.contain,
+                            color: Theme.of(context).primaryColor,
                           ),
-                        ),
-                        Text(
-                          'Vai ai tuoi quiz',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 40, 40, 40),
-                            fontFamily: 'Mistral',
-                            fontSize: MediaQuery.of(context).size.height * 0.02,
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.01,
                           ),
-                        ),
-                      ],
+                          Text(
+                            'Quiz',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 40, 40, 40),
+                              fontFamily: 'Mistral',
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.025,
+                            ),
+                          ),
+                          Text(
+                            'Vai ai tuoi quiz',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 40, 40, 40),
+                              fontFamily: 'Mistral',
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.02,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

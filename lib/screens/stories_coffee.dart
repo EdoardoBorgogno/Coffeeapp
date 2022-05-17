@@ -3,8 +3,10 @@
 import 'dart:convert';
 
 import 'package:coffeapp/screens/coffe_cups.dart';
+import 'package:coffeapp/screens/quiz_single_page.dart';
 import 'package:coffeapp/widgets/row_element_home.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 import '../services/json.dart';
 import '../services/navigation_animations.dart';
@@ -284,7 +286,118 @@ class _MidPartStoriesState extends State<MidPartStories> {
                     RowWithCard(
                       initialAssetPath: "assets/stories/starbucks_story.json",
                       localPath: "starbucks_story.json",
-                    )
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.04,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Align(
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          'Gioca i Quiz!',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 24, 24, 24),
+                            fontFamily: 'Mistral',
+                            fontSize: MediaQuery.of(context).size.height * 0.03,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.02,
+                    ),
+                    FutureBuilder<dynamic>(
+                      future: loadJsonFromAssets('assets/config/quizs.json'),
+                      builder: (context, snapshot) {
+                        var listQuiz = snapshot.data['quizs'];
+
+                        return snapshot.data == null
+                            ? CircularProgressIndicator()
+                            : ListView.builder(
+                                physics: BouncingScrollPhysics(),
+                                shrinkWrap: true,
+                                itemCount: (listQuiz as List).length,
+                                itemBuilder: (context, index) {
+                                  return Column(
+                                    children: [
+                                      GestureDetector(
+                                        onTap: (() => Navigator.of(context)
+                                            .pushAndRemoveUntil(
+                                                PageTransition(
+                                                  child: QuizSinglePage(
+                                                    pathToFile:
+                                                        'assets/quizs/' +
+                                                            listQuiz[index]
+                                                                ['jsonName'],
+                                                  ),
+                                                  type: PageTransitionType
+                                                      .rightToLeft,
+                                                ),
+                                                (route) => false)),
+                                        child: Container(
+                                          clipBehavior: Clip.hardEdge,
+                                          decoration: const BoxDecoration(
+                                            color: Color.fromARGB(
+                                                255, 244, 244, 244),
+                                            borderRadius: BorderRadius.all(
+                                              Radius.circular(20),
+                                            ),
+                                          ),
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.8,
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              0.1,
+                                          child: Row(
+                                            children: [
+                                              Image.asset(
+                                                'assets/images/' +
+                                                    listQuiz[index]
+                                                        ['quizImage'],
+                                                fit: BoxFit.cover,
+                                                width: MediaQuery.of(context)
+                                                        .size
+                                                        .width *
+                                                    0.2,
+                                                height: MediaQuery.of(context)
+                                                        .size
+                                                        .height *
+                                                    0.1,
+                                              ),
+                                              SizedBox(
+                                                width: MediaQuery.of(context)
+                                                        .size
+                                                        .width *
+                                                    0.07,
+                                              ),
+                                              Text(
+                                                listQuiz[index]['quizName'],
+                                                style: const TextStyle(
+                                                  fontFamily: 'comic',
+                                                  color: Color.fromARGB(
+                                                      255, 24, 24, 24),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.025,
+                                      ),
+                                    ],
+                                  );
+                                },
+                              );
+                      },
+                    ),
                   ],
                 ),
               ),

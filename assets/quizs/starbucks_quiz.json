@@ -1,0 +1,63 @@
+{
+    "jsonData" : {
+        "jsonName" : "starbucks_quiz.json"
+    },
+    "quiz" : {
+        "quizName" : "La Storia di Starbucks",
+        "quizDescription" : "Quiz sulla storia di Starbucks, quante ne sai sull'impero del caffè?",
+        "quizImage" : "starbucks2.jpg"
+    },
+    "pageStructure" : [
+        {
+            "questionText" : "Dove è nato Starbucks?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Londra",
+                "New York",
+                "Seattle",
+                "Berlino"
+            ],
+            "rigthAnswer" : "Seattle"
+        },
+        {
+            "questionText" : "Quanti erano i soci fondatori dell'azienda?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "2 soci",
+                "3 soci",
+                "6 soci"
+            ],
+            "rigthAnswer" : "3 soci"
+        },
+        {
+            "questionText" : "Quanti negozi possedeva Starbucks nel 1996?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Circa 2500",
+                "2193",
+                "Circa 1300"
+            ],
+            "rigthAnswer" : "Circa 2500"
+        },
+        {
+            "questionText" : "Starbucks è sempre stata una catena di caffetterie?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Si",
+                "No"
+            ],
+            "rigthAnswer" : "No"
+        },
+        {
+            "questionText" : "Quanti dipendenti ha Starbucks?",
+            "type" : "radio",
+            "radioAnswers" : [
+                "Circa 383.000",
+                "Circa 171000",
+                "Circa 29000",
+                "Cica 239000"
+            ],
+            "rigthAnswer" : "Circa 383.000"
+        }
+    ]
+}

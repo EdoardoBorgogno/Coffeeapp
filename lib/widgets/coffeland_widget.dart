@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../screens/stories_coffee.dart';
+import '../services/navigation_animations.dart';
+
 class CoffeeLandWidget extends StatelessWidget {
   const CoffeeLandWidget({Key? key}) : super(key: key);
 
@@ -7,7 +10,8 @@ class CoffeeLandWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        print('CoffeeLandWidget');
+        Navigator.pushAndRemoveUntil(
+            context, createRoute(CoffeeStories()), (route) => false);
       },
       child: Container(
         width: MediaQuery.of(context).size.width * 0.85,

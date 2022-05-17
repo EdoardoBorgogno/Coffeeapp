@@ -2,6 +2,7 @@ import 'package:coffeapp/screens/account.dart';
 import 'package:coffeapp/screens/citation_page.dart';
 import 'package:coffeapp/screens/home_page.dart';
 import 'package:coffeapp/screens/loading_screen.dart';
+import 'package:coffeapp/screens/quiz_single_page.dart';
 import 'package:coffeapp/screens/stories_coffee.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';

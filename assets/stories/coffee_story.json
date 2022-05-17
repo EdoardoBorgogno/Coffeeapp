@@ -6,7 +6,7 @@
         "userChapter" : 0
     },
     "story" : {
-        "storyName" : "La Storia del caffe",
+        "storyName" : "La Storia del caffe'",
         "storyDescription" : "Da vino d’Arabia a bevanda del diavolo, la storia millenaria del caffè. Scopri come il caffè è diventato una delle bevande più consumate al Mondo",
         "storyImage" : "istanbul.jpg"
     },
@@ -14,14 +14,14 @@
         {
             "chapterId" : 0,
             "chapterName" : "Introduzione",
-            "chapterDesc" : "Introduzione alla storia del caffe",
+            "chapterDesc" : "Introduzione alla storia del caffe'",
             "chapterImage" : "kaffa_people.jpg",
             "chapterPages" : [
                 {
                     "pageId" : 0,
                     "pageStructure" : [
                         {
-                            "title" : "La Storia del caffe",
+                            "title" : "La Storia del caffe'",
                             "content" : "La storia che racconteremo ha inizio più di 1500 anni fa, nel lontano 500 d.C., a Kaffa, in Etiopia.",
                             "image" : "kaffa_people.jpg"
                         }
@@ -32,7 +32,7 @@
         {
             "chapterId" : 1,
             "chapterName" : "Kaffa",
-            "chapterDesc" : "La culla del caffe",
+            "chapterDesc" : "La culla del caffè",
             "chapterImage" : "kaffa_plantations.jpg",
             "chapterPages" : [
                 {
@@ -40,7 +40,7 @@
                     "pageStructure" : [
                         {
                             "title" : "Kaffa",
-                            "subtitle" : "La culla del caffe",
+                            "subtitle" : "La culla del caffe'",
                             "content" : "A scoprire l’effetto energizzante del caffè furono, con molta probabilità, gli antenati etiopi del gruppo etnico degli Oromo che, già dalla seconda metà del 500 d.C., iniziarono ad utilizzare queste strane bacche per produrre un infuso che oggi chiamiamo caffè.",
                             "image" : "kaffa.jpg"
                         }
